@@ -6,6 +6,7 @@ import cv2,time
 import Features
 import pandas as pd
 import db
+import json
 
 RESIZE_FACTOR = 0.02
 
@@ -89,10 +90,10 @@ def get_feature_loop_from_video(stdscr):
         gray = cv2.resize(gray, (0,0), fx=RESIZE_FACTOR, fy=RESIZE_FACTOR)
         cv2.imshow('Capturing',gray)
         time_ = time.time()*1000.0
-        df = df.append({'img_gray': [x for x in gray.ravel()],
-                        'label':d,
+        df = df.append({'img_gray': json.dumps([int(x) for x in gray.ravel()]),
+                        'label':str(d),
                         'time': time_,
-                        'shape':gray.shape}, ignore_index=True)
+                        'shape':json.dumps(gray.shape)}, ignore_index=True)
 
         # Play stream
         key = cv2.waitKey(1)
