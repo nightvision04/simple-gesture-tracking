@@ -1,11 +1,11 @@
 
 ## Purpose
 
-This is a personal 1-day challenge to create a relatively lightweight gesture tracking script. It doesn't use convolution. It's limited to fixed camera & fixed lighting setups.
-
 Quickly train 4 gestures for the model to learn. Press the UP, DOWN, RIGHT, and LEFT arrows on your keyboard to 'label' each gesture in realtime. After 30 seconds you'll be prompted to save (append) the new training data. It will immediately show you a cross-validation score of the fitted data.
 
 Now see your gestures work in realtime! Run `predict_gesture.py.`
+
+This was a personal 1-day challenge to create a relatively lightweight gesture tracking script. It doesn't use convolution. It's intended for fixed camera & fixed lighting setups.
 
 ##### Requirements
 - Anaconda Python >= 3.7
@@ -46,6 +46,11 @@ python init_db.py
 python capture_features.py
 python predict_gesture.py
 ```
+
+##### Future Updates
+
+- Add class for continuously updating the db with live gesture predictions.
+- Add api for accessing live gestures from other programs.
 
 
 #### Author:
