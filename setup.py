@@ -4,7 +4,7 @@ setup(
     name='head_controller',
     packages=['head_controller'],
     description='A package to learn and understand 2 axis head movements',
-    version='0.1.1',
+    version='0.1.3',
     url = 'https://github.com/nightvision04/simple-gesture-tracking',
     author='Dan Scott',
     author_email='danscottlearns@gmail.com',
