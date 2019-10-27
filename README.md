@@ -1,6 +1,5 @@
-### Installation
 
-### Purpose
+## Purpose
 
 This is a personal 1-day challenge to create a relatively lightweight gesture tracking script. It doesn't use convolution. It's limited to fixed camera & fixed lighting setups.
 
@@ -49,9 +48,9 @@ python predict_gesture.py
 ```
 
 
-## Author:
-Dan Scott 2019
-MIT License
-email: danscottlearns@gmail.com
+#### Author:
+- Dan Scott 2019
+- MIT License
+- email: danscottlearns@gmail.com
 
 If you're interested in adding to this library or using it for a project - I would love to hear from you.
