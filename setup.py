@@ -12,6 +12,7 @@ setup(
     install_requires=[
           'opencv-python',
           'mysqlclient',
-          'pymysql'
+          'pymysql',
+          'sklearn'
       ],
     )

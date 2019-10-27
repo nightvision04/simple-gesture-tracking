@@ -9,7 +9,7 @@ import db
 import json
 
 RESIZE_FACTOR = 0.02
-
+TRAIN_TIME = 30
 
 def get_input(stdscr):
 
@@ -54,7 +54,7 @@ def get_feature_loop_from_video(stdscr):
     a = 0
     k = 0
     d=''
-    while ( time.time() - t1 ) < 15:
+    while ( time.time() - t1 ) < TRAIN_TIME:
 
 
         # Collect key pressed here -----
@@ -86,7 +86,11 @@ def get_feature_loop_from_video(stdscr):
         a+=1
         check,frame = video.read()
         # Convert to grayscale
-        gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+        try:
+            gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+        except Exception as e:
+            print('Error. Stopping early. {}'.format(e))
+            break
         gray = cv2.resize(gray, (0,0), fx=RESIZE_FACTOR, fy=RESIZE_FACTOR)
         cv2.imshow('Capturing',gray)
         time_ = time.time()*1000.0
@@ -132,6 +136,7 @@ def get_single_input(stdscr):
     return d
 
 class Collector():
+
 
 
     def gather(self):
