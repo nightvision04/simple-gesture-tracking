@@ -5,11 +5,14 @@ import head_controller.Camera as Camera
 import head_controller.db as db
 
 #### Requirements
+
 - Anaconda Python >= 3.7
 
-##Quickstart
+## Quickstart
+
 Quickly train 4 gestures for the model to learn. Press the UP, DOWN, RIGHT, and LEFT arrows on your keyboard to 'label' each gesture in realtime. After 30 seconds you'll be prompted to save (append) the new training data. It will immediately show you a cross-validation score of the fitted data.
 Initialize, Train, and Predict in less than 60 seconds (using your webcam).
+
 
 ```
 # Initialize gesture training data
