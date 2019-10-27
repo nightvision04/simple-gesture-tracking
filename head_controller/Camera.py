@@ -3,7 +3,7 @@ import head_controller.Features as Features
 import pandas as pd
 import numpy as np
 import json
-import db
+import head_controller.db as db
 import head_controller.Model as Model
 
 RESIZE_FACTOR = 0.02

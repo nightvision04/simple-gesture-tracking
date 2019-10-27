@@ -3,7 +3,7 @@ import sys,os
 import curses
 import cv2,time
 import pandas as pd
-import db
+import head_controller.db as db
 import json
 
 RESIZE_FACTOR = 0.02

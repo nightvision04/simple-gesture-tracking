@@ -1,5 +1,5 @@
 import numpy as np
-import db
+import head_controller.db as db
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 

@@ -1,4 +1,4 @@
 # Inside of __init__.py
 
-import db
+import head_controller.db as db
 db.setup_db()
