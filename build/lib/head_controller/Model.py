@@ -10,7 +10,6 @@ class Model():
 
         self.clf=None
 
-
     def build_svc(self):
         '''
         Expects X to be in the original shape as collected so that a standard

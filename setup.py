@@ -33,7 +33,7 @@ setup(
     packages=['head_controller'],
     description='A package to quickly train and predict head gestures',
     long_description=long_description,
-    version='0.1.7',
+    version='0.1.8',
     url = 'https://github.com/nightvision04/simple-gesture-tracking',
     author='Dan Scott',
     author_email='danscottlearns@gmail.com',
