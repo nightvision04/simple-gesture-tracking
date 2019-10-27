@@ -41,7 +41,10 @@ def check_video_frame_data_predict():
         print(frame)
 
         orig = frame
-        gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+        try:
+            gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+        except:
+            continue
         gray = cv2.resize(gray, (0,0), fx=RESIZE_FACTOR, fy=RESIZE_FACTOR)
         time_ = time.time()*1000.0
         X = np.array([int(x) for x in gray.ravel()])
@@ -71,8 +74,8 @@ def get_features():
 def capture_review_submit_labels():
 
     df = get_features()
-    print('Length',len(df))
-    resp=input('Enter Y to submit')
+    print('Sample Length:',len(df))
+    resp=input('Enter Y to save training data: ')
     if resp.lower() == 'y':
         db.send_df_to_table(df,'training_data_small',operation='append')
     else:
