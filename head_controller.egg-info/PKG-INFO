@@ -1,13 +1,13 @@
 Metadata-Version: 1.1
 Name: head-controller
-Version: 0.1.3
-Summary: A package to learn and understand 2 axis head movements
+Version: 0.1.4
+Summary: A package to quickly train and predict head gestures
 Home-page: https://github.com/nightvision04/simple-gesture-tracking
 Author: Dan Scott
 Author-email: danscottlearns@gmail.com
 License: UNKNOWN
 Description: UNKNOWN
-Keywords: head,controller,nueral net,movement,axis,recognition
+Keywords: head,controller,nueral net,movement,axis,recognition,computer vision,head tracking
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers

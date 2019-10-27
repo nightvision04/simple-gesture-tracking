@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import json
 import db
-import Model
+import head_controller.Model as Model
 
 RESIZE_FACTOR = 0.02
 

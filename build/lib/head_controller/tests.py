@@ -1,9 +1,9 @@
 import unittest
-import Camera,db,Features
+import head_controller.Camera as Camera
+import head_controller.db as db
+import head_controller.Features as Features
 import pandas as pd
 import pymysql
-import db
-
 
 class TestStringMethods(unittest.TestCase):
 

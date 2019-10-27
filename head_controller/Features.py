@@ -1,9 +1,7 @@
 
 import sys,os
 import curses
-
 import cv2,time
-import Features
 import pandas as pd
 import db
 import json
@@ -129,7 +127,6 @@ def get_single_input(stdscr):
     else:
         d= 'NONE'
 
-
     # Refresh the screen
     stdscr.refresh()
 
@@ -138,12 +135,10 @@ def get_single_input(stdscr):
 class Collector():
 
 
-
     def gather(self):
         curses.wrapper(get_input)
         return
 
     def get_key(self):
-        #d = curses.wrapper(get_single_input)
         df = curses.wrapper(get_feature_loop_from_video)
         return df
