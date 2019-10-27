@@ -1,4 +1,5 @@
+import db
 
-# Setup mysql
-import pymysql
-pymysql.install_as_MySQLdb()
+
+# Setup mysql tables
+db.setup_db()
