@@ -2,3 +2,4 @@ opencv-python
 mysqlclient
 pymysql
 sklearn
+pandas
