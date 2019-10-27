@@ -47,7 +47,7 @@ def get_feature_loop_from_video(stdscr):
     df = pd.DataFrame()
     df['img_gray'] = []
     df['time'] = []
-    df['frame'] = []
+    df['shape'] = []
     df['label'] = []
     t1 = time.time()
     a = 0
@@ -88,11 +88,11 @@ def get_feature_loop_from_video(stdscr):
         gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
         gray = cv2.resize(gray, (0,0), fx=RESIZE_FACTOR, fy=RESIZE_FACTOR)
         cv2.imshow('Capturing',gray)
-        time_ = time.time()
+        time_ = time.time()*1000.0
         df = df.append({'img_gray': [x for x in gray.ravel()],
                         'label':d,
                         'time': time_,
-                        'frame':frame}, ignore_index=True)
+                        'shape':gray.shape}, ignore_index=True)
 
         # Play stream
         key = cv2.waitKey(1)

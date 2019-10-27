@@ -19,3 +19,9 @@ conda activate head
 # Navigate to the head_controller directory
 python setup.py install
 ```
+
+Then use:
+
+```
+python init_db.py
+```

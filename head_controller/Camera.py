@@ -65,5 +65,7 @@ def capture_review_submit_labels():
     resp=input('Enter Y to submit')
     if resp == 'Y':
         db.send_df_to_table(df,'test',operation='append')
+    else:
+        df.to_csv('Rejected.csv')
 
     return
