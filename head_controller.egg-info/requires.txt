@@ -3,3 +3,5 @@ mysqlclient
 pymysql
 sklearn
 pandas
+curses
+windows-curses

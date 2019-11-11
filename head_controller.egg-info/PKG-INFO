@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: head-controller
-Version: 0.1.13
+Version: 1.1.0
 Summary: A package to quickly train and predict head gestures
 Home-page: https://github.com/nightvision04/simple-gesture-tracking
 Author: Dan Scott
@@ -35,9 +35,10 @@ Description:
         
 Keywords: head,controller,nueral net,movement,axis,recognition,computer vision,head tracking
 Platform: UNKNOWN
-Classifier: Development Status :: 3 - Alpha
+Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Build Tools
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
