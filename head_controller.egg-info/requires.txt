@@ -3,5 +3,6 @@ mysqlclient
 pymysql
 sklearn
 pandas
-curses
+
+[:platform_system == "Windows"]
 windows-curses

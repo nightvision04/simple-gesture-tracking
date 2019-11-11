@@ -13,22 +13,20 @@ Predict your webcam gestures in realtime!
 
 Quickly train 4 gestures for the model to learn. Press the UP, DOWN, RIGHT, and LEFT arrows on your keyboard to 'label' each gesture in realtime. After 30 seconds you'll be prompted to save (append) the new training data. A cross-validation score of the fitted data will be displayed. <i>This model doesn't use convolution. It's intended for fixed camera & fixed lighting setups.</i>
 
-<p float="center"><center>
-<img src='img/1.png' height='100'>
-<img src='img/2.png' height='100'>
-<img src='img/3.png' height='100'>
-<img src='img/4.png' height='100'>
+<p align="center">
+<img src='img/row.png' height='120'>
+
 <br>
 <sub><b>Above</b> - Example of 4 distinct gesture inputs during training.</sub>
 </p>
 
 
 
-<p float="center"><center>
+<p align="center"><center>
 <img src='img/5.png' height='230'><br>
 <sub><b>Above</b> - Live prediction would output <i>'Gesture 1'.</i></sub>
 </p>
-</center>
+
 
 ##### Requirements
 - Anaconda Python >= 3.7

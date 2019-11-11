@@ -33,7 +33,7 @@ setup(
     packages=['head_controller'],
     description='A package to quickly train and predict head gestures',
     long_description=long_description,
-    version='1.1.0',
+    version='1.1.1',
     url = 'https://github.com/nightvision04/simple-gesture-tracking',
     author='Dan Scott',
     author_email='danscottlearns@gmail.com',
@@ -44,8 +44,7 @@ setup(
           'pymysql',
           'sklearn',
           'pandas',
-          'curses',
-          'windows-curses'
+          'windows-curses;platform_system=="Windows"'
       ],
       classifiers=[
     'Development Status :: 4 - Beta',
