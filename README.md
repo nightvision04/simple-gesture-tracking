@@ -15,21 +15,21 @@ Quickly train 4 gestures for the model to learn. Press the UP, DOWN, RIGHT, and 
 
 <p align="center">
 <img src='img/row.png' height='120'>
-
 <br>
 <sub><b>Above</b> - Example of 4 distinct gesture inputs during training.</sub>
 </p>
 
 
 
-<p align="center"><center>
-<img src='img/5.png' height='230'><br>
+<p align="center">
+<img src='img/5.png' height='230'>
+<br>
 <sub><b>Above</b> - Live prediction would output <i>'Gesture 1'.</i></sub>
 </p>
 
 
 ##### Requirements
-- Anaconda Python >= 3.7
+- Anaconda Python >= 3.5
 
 ##### Manual Installation
 

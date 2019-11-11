@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: head-controller
-Version: 1.1.1
+Version: 1.1.2
 Summary: A package to quickly train and predict head gestures
 Home-page: https://github.com/nightvision04/simple-gesture-tracking
 Author: Dan Scott
